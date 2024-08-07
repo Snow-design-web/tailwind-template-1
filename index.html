@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template One</title>
+    <link rel="shortcut icon" href="./logo.jpg" type="image/x-icon">
+    <!-- Tailwind -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Google FOnts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="p-4 bg-white" style=" font-family: 'Roboto';">
+    <header
+        style="width: 90% !important;"
+        class="fixed top-5 flex items-center justify-between h-16 z-10"
+    >
+        <nav>
+            <i class="fa fa-bars text-black text-2xl"></i>
+        </nav>
+        <nav class="relative">
+            <input 
+                type='text' name="" id="" 
+                placeholder="Search"
+                class="h-10 border-2 bg-gray-300 rounded-3xl pl-10 pr-5 text-black placeholder-gray-600 border-0 outline-none" 
+                style="width: 65vw;"
+            />
+            <i 
+                class="fa fa-search absolute left-0 ml-6 text-gray-600"
+                style="top: 50%; translate: -50% -50%;"
+            ></i>
+        </nav>
+    </header>
+
+    <main class="mt-24 pb-24">
+        <section class="flex justify-between">
+            <button class="focus:outline-none focus:opacity-75 hover:opacity-75 bg-gray-300 w-20 h-10 text-base font-medium rounded-lg">
+                Pizza
+            </button>
+            <button class="focus:outline-none focus:opacity-75 hover:opacity-75 bg-gray-300 w-20 h-10 text-base font-medium rounded-lg">
+                Burger
+            </button>
+            <button class="focus:outline-none focus:opacity-75 hover:opacity-75 bg-gray-300 w-20 h-10 text-base font-medium rounded-lg">
+                Potato
+            </button>
+            <button class="focus:outline-none focus:opacity-75 hover:opacity-75 bg-gray-300 w-20 h-10 text-base font-medium rounded-lg">
+                Dessert
+            </button>
+        </section>
+
+        <section>
+            <div class="flex justify-between mt-10">
+                <h2 class="font-bold text-2xl">Popular Items</h2>
+                <button class="focus:outline-none focus:opacity-75 hover:opacity-75 rounded-2xl border border-gray-500 outline-none px-6">View All</button>
+            </div>
+
+            <div class="flex justify-between col-gap-3 mt-4">
+                <div class="h-64 flex flex-col flex-1 flex-basis-40 items-center justify-center shadow-lg rounded-2xl">
+                    <img 
+                        src="./images/beef-burger.jpg" alt="Burger" srcset=""
+                        style="border-radius: 50%; width: 150px; height: 150px;"
+                    >
+                    <h2 class="text-xl font-semibold">Beef Burger</h2>
+                    <p class="text-base font-semibold">$7.99 - $79.99</p>
+                    <p class="text-xs font-light text-gray-500">A description on how to go on</p>
+                </div>
+                <div class="h-64 flex flex-col flex-1 flex-basis-40 items-center justify-center shadow-lg rounded-2xl">
+                    <img 
+                        src="./images/sweet-onion-pizza.jpg" alt="Burger" srcset=""
+                        style="border-radius: 50%; width: 150px; height: 150px;"
+                    >
+                    <h2 class="text-xl font-semibold">Sweet Onion Pizza</h2>
+                    <p class="text-base font-semibold">$7.99 - $79.99</p>
+                    <p class="text-xs font-light text-gray-500">A description on how to go on</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex justify-between mt-10">
+                <h2 class="font-bold text-2xl">Special Offers</h2>
+                <button class="focus:outline-none focus:opacity-75 hover:opacity-75 rounded-2xl border border-gray-500 outline-none px-6">View All</button>
+            </div>
+
+            <div class="flex justify-between col-gap-3 mt-4">
+                <div class="h-64 flex flex-col flex-1 flex-basis-40 items-center justify-center shadow-lg rounded-2xl">
+                    <img 
+                        src="./images/chocolate-cone.avif" alt="Burger" srcset=""
+                        style="border-radius: 50%; width: 150px; height: 150px;"
+                    >
+                    <h2 class="text-xl font-semibold">Chocolate-Cone</h2>
+                    <p class="text-base font-semibold">$7.99 - $79.99</p>
+                    <p class="text-xs font-light text-gray-500">A description on how to go on</p>
+                </div>
+                <div class="h-64 flex flex-col flex-1 flex-basis-40 items-center justify-center shadow-lg rounded-2xl">
+                    <img 
+                        src="./images/luxury-pink-cake.avif" alt="Burger" srcset=""
+                        style="border-radius: 50%; width: 150px; height: 150px;"
+                    >
+                    <h2 class="text-xl font-semibold">Luxury Pink Cake</h2>
+                    <p class="text-base font-semibold">$7.99 - $79.99</p>
+                    <p class="text-xs font-light text-gray-500">A description on how to go on</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer 
+        class="fixed bottom-0 left-0 h-16 rounded-t-3xl flex flex-row justify-around items-center bg-white z-10 w-full"
+        style="box-shadow: 0 -5px 10px lightgrey, 0 0 10px lightgrey;"
+    >
+        <nav>
+            <i class="fa fa-home text-blue-800 text-lg"></i>
+        </nav>
+        <nav>
+            <i class="far fa-heart text-blue-800 text-lg"></i>
+        </nav>
+        <nav>
+            <i class="fa fa-shopping-cart text-blue-800 text-lg"></i>
+        </nav>
+        <nav>
+            <i class="far fa-user text-blue-800 text-lg"></i>
+        </nav>
+    </footer>
+</body>
+</html>
